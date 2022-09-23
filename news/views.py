@@ -67,6 +67,7 @@ class StatusRetrieveUpdateDestroyAPIView(RetrieveUpdateDestroyAPIView):
 
 
 class NewsStatusGET(APIView):
+    authentication_classes = (TokenAuthentication, SessionAuthentication)
     permission_classes = (IsAuthorPermission, )
 
     def get(self, request, news_id, status_slug):
@@ -85,6 +86,7 @@ class NewsStatusGET(APIView):
 
 
 class CommentsStatusGET(APIView):
+    authentication_classes = (TokenAuthentication, SessionAuthentication)
     permission_classes = (IsAuthorPermission, )
 
     def get(self, request, news_id, comment_id, status_slug):
