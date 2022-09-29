@@ -1,1 +1,8 @@
 venv/
+requirements.txt/
+news/__pycache__/
+news/migrations/__pycache__/
+account/__pycache__/
+account/migrations/__pycache__/
+exam/__pycache__/
+.idea/
